@@ -28,7 +28,7 @@ http://www.cssstickyfooter.com/using-sticky-footer-code.html
         </div>
 
 
-        <div class="site-info" style="float:right;">
+        <div class="site-info">
 
             <?php printf( __( 'Proudly powered by %1$s', 'commando' ), '<a href="http://wordpress.org/">WordPress</a>' ); ?>
             <span class="sep"> | </span>

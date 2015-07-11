@@ -13,7 +13,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-
+<!-- if using ★ font awesome in logo   -->
+<link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
 <?php wp_head(); ?>
 </head>
 
@@ -24,12 +25,21 @@
 	<header id="masthead" class="site-header" role="banner">
         <div style="background-color: pink;"></div>
 		<div class="site-branding">
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><span style="color:#E32636; text-decoration:blink;">★</span> <?php bloginfo( 'name' ); ?></a></h1>
+			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><span class="logo-font" style="color:#E32636; text-decoration:blink; padding-right: 15px;">★</span><?php bloginfo( 'name' ); ?></a></h1>
 <!--			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>-->
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="menu" aria-expanded="false"><?php _e( 'Primary Menu', 'commando' ); ?></button>
+            
+            <!-- 
+            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+                
+            </button>
+             -->
+            
+			<button class="menu-toggle" aria-controls="menu" aria-expanded="false">
+                <?php _e( 'Navigation Menu', 'commando' ); ?>
+            </button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->

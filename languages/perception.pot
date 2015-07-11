@@ -96,7 +96,7 @@ msgid "Theme: %1$s by %2$s."
 msgstr ""
 
 #: functions.php:53 header.php:31
-msgid "Primary Menu"
+msgid "Navigation Menu"
 msgstr ""
 
 #: functions.php:88

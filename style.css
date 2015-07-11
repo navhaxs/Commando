@@ -1,9 +1,9 @@
 /*
 Theme Name: Commando
-Theme URI: http://underscores.me/ TODO
+Theme URI: http://example.com/
 Author: Jeremy Wong
 Author URI: http://navhaxs.au.eu.org/
-Description: Present your finest. Show off your <em>feature images</em> - great for <code>photography</code> or <code>art</code> blogs.
+Description: A clean theme for blogging, with space for featured images.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -13,7 +13,7 @@ Tags: two-columns, right-sidebar, custom-menu, featured-image-header, sticky-pos
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-commando is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+Commando is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
@@ -301,7 +301,8 @@ big {
 3.0 Elements
 --------------------------------------------------------------*/
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased; }
 
 *,
 *:before,
@@ -453,16 +454,18 @@ a {
   .main-navigation {
     float: right;
     clear: both;
-    display: block; } }
+    display: block; }
+    .main-navigation li {
+      float: left;
+      max-width: inherit; } }
 .main-navigation {
-  border-top: 4px solid rgba(0, 0, 0, 0.2);
-  border-bottom: 4px solid rgba(0, 0, 0, 0.2);
+  border-top: 4px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 4px solid rgba(255, 255, 255, 0.2);
   font-family: 'BebasNeue', sans-serif;
   font-size: 1.5em;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-top: 30px;
-  margin-right: 40px; }
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-top: 30px; }
   .main-navigation ul {
     list-style: none;
     margin: 0;
@@ -488,8 +491,11 @@ a {
     .main-navigation ul li:hover > ul {
       left: auto; }
   .main-navigation li {
-    float: left;
-    position: relative; }
+    position: relative;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    line-height: 1em;
+    max-width: 300px; }
     .main-navigation li:hover {
       background-color: #E32636; }
       .main-navigation li:hover > a {
@@ -499,11 +505,16 @@ a {
     text-decoration: none;
     padding: 5px 15px 10px 15px;
     color: white; }
+  .main-navigation .current_page_item > a,
+  .main-navigation .current-menu-item > a,
+  .main-navigation .current_page_ancestor > a {
+    text-decoration: underline; }
 
-/* Small menu. */
+/*  Very tiny menu - hidden */
 .menu-toggle {
   display: none; }
 
+/* Very tiny menu - displayed */
 @media screen and (max-width: 600px) {
   .menu-toggle,
   .main-navigation.toggled .nav-menu {
@@ -511,6 +522,10 @@ a {
 
   .main-navigation ul {
     display: none; } }
+/* Mobile menu */
+@media screen and (max-width: 950px) {
+  .main-navigation li {
+    max-width: inherit; } }
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
@@ -567,6 +582,11 @@ a {
 .post-navigation .nav-previous:hover {
   border: 1px solid white;
   background-color: rgba(255, 255, 255, 0.95); }
+
+.menu-toggle {
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-bottom: 8px; }
 
 /*--------------------------------------------------------------
 6.0 Accessibility
@@ -993,25 +1013,28 @@ object {
 @media only screen and (max-width: 950px) {
   .content-area {
     float: inherit;
-    margin: auto; }
+    margin: auto;
+    width: auto; }
 
   .site-main {
-    -moz-transition: 0.4s;
-    -o-transition: 0.4s;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
     margin: 0px 10px 0px 10px; }
 
   .site-content .widget-area {
     float: inherit;
     margin: 10px auto 0px auto;
-    -moz-transition: 0.4s;
-    -o-transition: 0.4s;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
+    -moz-transition: 0.25s;
+    -o-transition: 0.25s;
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
     padding: 10px;
-    width: auto;
-    width: 97%; } }
+    width: 100%; } }
+@media only screen and (max-width: 600px) {
+  .page-content, .entry-content, .entry-summary {
+    padding: 0px 15px 15px; } }
 .page-header {
   background-color: #E32636;
   color: white;
@@ -1021,7 +1044,7 @@ object {
   width: 25%; }
 
 .site-footer-wrapper {
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: #34434C;
   min-height: 120px;
   box-shadow: 0px 500px 0px 500px rgba(0, 0, 0, 0.75); }
 
@@ -1042,6 +1065,7 @@ object {
     border: 1px solid rgba(0, 0, 0, 0.46);
     margin: 10px; }
   .site-footer .site-info {
+    float: right;
     margin-bottom: 50px;
     right: 0; }
 
@@ -1056,16 +1080,19 @@ object {
       width: 100%; }
     .site-footer .site-info {
       padding-top: 50px;
-      float: none; } }
+      float: none;
+      text-align: center; } }
 .arrow-down {
-  width: 0;
-  height: 0;
   border-left: 25px solid transparent;
   border-right: 25px solid transparent;
-  border-top: 30px solid white;
+  border-top: 30px solid #FFF;
   position: absolute;
   top: -1px;
-  right: 50%; }
+  right: 50%;
+  width: 50px;
+  height: 50px;
+  left: 50%;
+  margin-left: -25px; }
 
 .site-branding {
   margin-top: 20px; }
@@ -1086,7 +1113,8 @@ object {
   margin: 0 auto; }
 
 .site-header {
-  padding-left: 20px; }
+  padding: 10px;
+  padding-bottom: 20px; }
   .site-header h1 a {
     font-family: 'BebasNeue', sans-serif;
     font-size: 1.2em;
@@ -1095,7 +1123,6 @@ object {
     text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.32);
     color: white; }
   .site-header h1 a:hover {
-    font-weight: 500;
     color: #E32636; }
   .site-header h2 {
     font-size: 1em;
