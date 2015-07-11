@@ -1,0 +1,64 @@
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+.format-video {
+    
+    background-color: #1B1B1B;
+    color: white;
+    
+    .entry-footer {
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+    
+    .entry-content {
+        padding-top: 0px;
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-bottom: 0px;
+    }
+    
+    embed,
+    iframe,
+    object {
+        height: 590px;
+        width: 100%;
+    }
+    
+    p {
+        margin-bottom: 0;
+    }
+    
+}
+
+ .commando-stretchvideo {
+    embed,
+    iframe,
+    object {
+        
+    }
+
+ }
+
+/*--------------------------------------------------------------
+12.1 Captions
+--------------------------------------------------------------*/
+@import "captions";
+
+/*--------------------------------------------------------------
+12.2 Galleries
+--------------------------------------------------------------*/
+@import "galleries";

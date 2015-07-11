@@ -1,0 +1,221 @@
+@media only screen and (min-width: $size__mobile) {
+    .content-area {
+        float: left;
+        margin: 0 (-$size__site-sidebar) 0 0;
+        width: $size__site-main;
+    }
+
+    .site-main {
+        margin: 0 $size__site-sidebar 0 0;
+
+    }
+
+    .site-content .widget-area {
+        float: right;
+        width: $size__site-sidebar;
+    }
+
+}
+
+@media only screen and (max-width: 1320px) { /*1280px+10px+10px*/
+    .content-area {
+        float: left;
+        margin: 0 (-$size__site-sidebar) 0 0;
+        width: $size__site-main;
+    }
+
+    .site-main {
+        margin: 0 $size__site-sidebar 0 10px;
+    }
+
+    .site-content .widget-area {
+        float: right;
+        width: $size__site-sidebar;
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (max-width: $size__mobile) {
+    .content-area {
+        float: inherit;
+        margin: auto;
+
+    }
+
+    .site-main {
+        
+        -moz-transition: 0.4s;
+        -o-transition: 0.4s;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+
+        margin: 0px 10px 0px 10px;
+    }
+
+    .site-content .widget-area {
+        float: inherit;
+        margin: 10px auto 0px auto;
+                
+        -moz-transition: 0.4s;
+        -o-transition: 0.4s;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+        
+        padding: 10px;
+        
+        width: auto;
+        width: 97%;
+    }
+
+}
+
+// Archives header block TODO: google calendar style custom img, per month
+.page-header {
+    background-color: $color__complementary;
+    color: white;
+    padding: 5px 15px 15px 15px;
+}
+
+.thirds {
+    width: $size__site-sidebar;
+}
+
+.site-footer-wrapper {
+    background-color: rgba(0, 0, 0, 0.75);
+    min-height: 120px;
+    
+        
+    //hack to fill footer to very bottom
+    box-shadow: 0px 500px 0px 500px rgba(0, 0, 0, 0.75);
+
+}
+
+.site-footer {
+    max-width: $size__maxwidth;
+
+    color: white;
+    
+    margin: 0 auto 0 auto;
+    font-size: 0.95em;
+    padding: 50px 10px;
+    
+    position: relative;
+
+    a {
+        color: #ff6d6d;
+        text-decoration: none;
+        
+        &:hover {
+            color: $color__complementary;
+        }
+    }
+    
+    & .widget {
+        background-color: rgba(255,255,255,0.07);
+        border: 1px solid rgba(0, 0, 0, 0.46);
+        margin: 10px;
+    }
+    
+    & .site-info {
+        margin-bottom: 50px;
+        right: 0;
+    }
+}
+    
+@media only screen and (max-width: $size__mobile) {
+ .site-footer {
+    
+     margin: 0px 20px 0px 20px;
+
+    & .widget {
+        background-color: rgba(255,255,255,0.07);
+        border: 1px solid rgba(0, 0, 0, 0.46);
+        margin: 20px 0px 10px 0px;
+    }
+    
+    .thirds {
+        width: 100%;
+    }
+     
+    & .site-info {
+        padding-top: 50px;
+        float: none;
+    }
+ }
+}
+.arrow-down {
+	width: 0; 
+	height: 0; 
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 30px solid white; //TODO: Leave a reply bg color
+    position: absolute;
+    top:-1px;
+    right: 50%;
+}
+
+//.hfeed {
+//    margin: 0 auto;  
+//}
+
+.site-branding {
+    margin-top: 20px;
+    @media only screen and (min-width: $size__mobile) {
+        float: left;
+    }
+}
+
+.site-navigation {
+    float: right;
+}
+
+.main-navigation {
+    clear: none;
+    
+        
+    & .menu-toggle {
+        margin: 0px auto 0px auto;   
+    }
+
+}
+
+.site-content, .site-header {
+    max-width: $size__maxwidth;
+    margin: 0 auto;
+}
+//header
+.site-header {
+    padding-left: 20px;
+    
+    h1 a {
+        font-family: 'BebasNeue', sans-serif;
+        font-size: 1.2em;
+        font-weight: 500;
+        text-decoration: none;
+        text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.32);
+        color: white;
+    }
+    
+    h1 a:hover {
+        font-weight: 500;
+        color: $color__complementary;
+    }
+    
+    h2 {
+        font-size: 1em;
+        font-weight: 400;
+        color: $color__primary;
+    }
+}
+
+// use cover for full-sized background image
+
+/*.custom-background {
+    background-size: cover;
+}
+*/
+
+.error-404 .page-content {
+    padding-top: 50px;
+    padding-bottom: 35%;
+}

@@ -1,0 +1,40 @@
+.comments-area {
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #e5e5e5;
+    border-radius: 2px;
+}
+
+.comment-list li:before {
+    color: $color__complementary;
+}
+
+.comment-body {
+    border-left: 3px solid $color__complementary;
+    padding-left: 5px;
+    
+    & .comment-reply-link {
+        color: $color__complementary;
+    }
+}
+
+.comment-content a {
+	-ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+.bypostauthor {
+	display: block;
+}
+.comment-notes {
+    font-style: italic;
+}
+.comment-reply-title {
+    margin-bottom: 0px;
+}
+
+.comment-respond p {
+    
+    font-size: 0.8em;
+    margin: 5px 0 5px 0;
+    
+}

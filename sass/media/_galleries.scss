@@ -1,0 +1,71 @@
+.gallery {
+	margin-bottom: 1.5em;
+}
+
+.gallery-item {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+    margin: 0;
+    padding: 0 20px 20px 0;
+    font-weight: 300;
+    font-style: italic;
+
+	.gallery-columns-2 & {
+		max-width: 50%;
+	}
+
+	.gallery-columns-3 & {
+		max-width: 33.33%;
+	}
+
+	.gallery-columns-4 & {
+		max-width: 25%;
+	}
+
+	.gallery-columns-5 & {
+		max-width: 20%;
+	}
+
+	.gallery-columns-6 & {
+		max-width: 16.66%;
+	}
+
+	.gallery-columns-7 & {
+		max-width: 14.28%;
+	}
+
+	.gallery-columns-8 & {
+		max-width: 12.5%;
+	}
+
+	.gallery-columns-9 & {
+		max-width: 11.11%;
+	}
+}
+
+
+.gallery .gallery-item:hover img,
+.gallery .gallery-item:focus img {
+  -webkit-box-shadow: rgba(0, 0, 0, .5) 0 1px 3px;
+  -moz-box-shadow: rgba(0, 0, 0, .5) 0 1px 3px;
+  -o-box-shadow: rgba(0, 0, 0, .5) 0 1px 3px;
+  box-shadow: rgba(0, 0, 0, .5) 0 1px 3px;
+  position: relative;
+  top: -2px;
+
+  /* Scale a little bit every piece and  */
+  /* This transform is not working on webkit because it renders the rotation and scale inside the column */
+  /*-webkit-transform: scale(1.05) rotate(-0.3deg);*/
+  -moz-transform: scale(1.01) rotate(-0.3deg);
+  -o-transform: scale(1.05) rotate(-0.3deg);
+  transform: scale(1.05) rotate(-0.3deg);
+}
+
+.gallery-caption {
+//    font-family: 'BebasNeue', sans-serif;
+//    font-size: 1.8em;
+    color: $color__primary;
+	display: block;
+}

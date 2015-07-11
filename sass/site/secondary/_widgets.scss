@@ -1,0 +1,70 @@
+.widget {
+    background-color: $color__base;
+
+
+    padding: 15px 10px;
+
+    
+    font-size: 14px;
+    
+	margin: 0 0 1.5em;
+
+	/* Make sure select elements fit in widgets. */
+	select {
+		max-width: 100%;
+	}
+        
+    h1 {
+        font-size: 16px;
+        margin-bottom: 5px;
+        font-family: "Open Sans", sans-serif;
+    }
+    
+    ul {
+        padding-left: 20px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="url"],
+    input[type="password"],
+    input[type="search"],
+    textarea {
+        -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+        transition: width 2s;
+        background-color: rgba(255,255,255,0.9);
+        
+        &:focus {
+            background-color: white;
+        }
+    }
+    
+}
+
+.widget-title {
+    margin-top: 0px;
+}
+
+/* Search widget. */
+.widget_search .search-submit {
+	display: none;
+}
+
+//.widget_tag_cloud {
+//    word-break: normal;
+//}
+
+.widget_calendar {
+    text-align: center;
+}
+
+#wp-calendar .td a {
+    height:200px;
+    width:200px;
+    background: $color__complementary;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    margin-left:25%;
+    margin-top:25%;
+}
