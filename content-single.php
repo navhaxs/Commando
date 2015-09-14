@@ -1,5 +1,7 @@
 <?php
 /**
+ * The template used for displaying single content
+ *
  * @package commando
  */
 ?>

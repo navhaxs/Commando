@@ -152,7 +152,7 @@ function commando_entry_footer() {
 
 	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
 		echo '<span class="comments-link">';
-		comments_popup_link( __( '0 Comment(s)', 'commando' ), __( '0 Comment(s)', 'commando' ), __( '% Comment(s)', 'commando' ) );
+		comments_popup_link( __( 'No Comments', 'commando' ), __( '1 Comment', 'commando' ), __( '% Comment(s)', 'commando' ) );
 		echo '</span>';
 	}
 
