@@ -19,9 +19,8 @@ blockquote, q {
 .main-navigation {
     border-top: 4px solid rgba(255, 255, 255, 0.2);
     border-bottom: 4px solid rgba(255, 255, 255, 0.2);
-    font-family: $font__menu;
-    font-weight: 300;
-    font-size: 1.2em;
+    font-family: $font__main;
+    font-weight: 400;
     
     padding-left: 8px;
     padding-right: 8px;
@@ -37,9 +36,8 @@ blockquote, q {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 			float: left;
 			position: absolute;
-			top: 1.5em;
+			top: 1em;
             margin-top: 20px;
-            font-size: 20px;
             background-color: darken($color__primary, 20%);
 			left: -999em;
 			z-index: 99999;

@@ -320,7 +320,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: #263238;
+  background: #242c34;
   /* Fallback for when there is no custom background color defined. */ }
 
 blockquote, q {
@@ -473,9 +473,8 @@ blockquote, q {
 .main-navigation {
   border-top: 4px solid rgba(255, 255, 255, 0.2);
   border-bottom: 4px solid rgba(255, 255, 255, 0.2);
-  font-family: "Sansation", sans-serif;
-  font-weight: 300;
-  font-size: 1.2em;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
   padding-left: 8px;
   padding-right: 8px;
   margin-top: 30px; }
@@ -487,9 +486,8 @@ blockquote, q {
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       float: left;
       position: absolute;
-      top: 1.5em;
+      top: 1em;
       margin-top: 20px;
-      font-size: 20px;
       background-color: #1b2428;
       left: -999em;
       z-index: 99999; }
@@ -807,8 +805,8 @@ blockquote, q {
   padding: 10px 25px 0 30px; }
 
 .entry-footer {
-  font-family: "Sansation Bold", sans-serif;
-  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
   background-color: #455a64;
   color: white;
   text-align: right;
@@ -1125,7 +1123,8 @@ object {
   .site-branding {
     float: left; } }
 .site-branding h1 {
-  margin: auto 0; }
+  margin: 0 0;
+  line-height: normal; }
 
 .site-navigation {
   float: right; }
@@ -1152,6 +1151,7 @@ object {
   .site-header h1 a:hover {
     color: #E32636; }
   .site-header h2 {
+    margin-left: 60px;
     font-family: "Open Sans", sans-serif;
     font-size: 1em;
     font-weight: 400;
