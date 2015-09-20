@@ -26,7 +26,7 @@
         <div style="background-color: pink;"></div>
 		<div class="site-branding">
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><span class="logo-font" style="color:#E32636; text-decoration:blink; padding-right: 15px;">★</span><?php bloginfo( 'name' ); ?></a></h1>
-<!--			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>-->
+-			<h2 class="site-description" style="display: inline;"><?php bloginfo( 'description' ); ?></h2>
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">

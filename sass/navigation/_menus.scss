@@ -19,8 +19,9 @@ blockquote, q {
 .main-navigation {
     border-top: 4px solid rgba(255, 255, 255, 0.2);
     border-bottom: 4px solid rgba(255, 255, 255, 0.2);
-    font-family: 'BebasNeue', sans-serif;
-    font-size: 1.5em;
+    font-family: $font__menu;
+    font-weight: 300;
+    font-size: 1.2em;
     
     padding-left: 8px;
     padding-right: 8px;
@@ -79,9 +80,15 @@ blockquote, q {
         line-height: 1em;
         
         max-width: 300px;
-            
+        
+        -webkit-transition: background 0.1s ease;
+        -moz-transition: background 0.1s ease;
+        -ms-transition: background 0.1s ease;
+        -o-transition: background 0.1s ease;
+        transition: background 0.1s ease;
+        
         &:hover {
-            background-color: $color__complementary;
+            @include background-opacity($color__complementary, 0.8);
             
             > a {
                 color: white;
@@ -91,10 +98,9 @@ blockquote, q {
 	a {
 		display: block;
 		text-decoration: none;
-        padding: 5px 15px 10px 15px;
+        padding: 5px 15px 5px 15px;
 
         color: white;
-
 	}
 
 	.current_page_item > a,
