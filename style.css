@@ -769,7 +769,7 @@ blockquote, q {
   display: inline; }
 
 .entry-header {
-  word-break: break-all;
+  word-break: keep-all;
   min-height: 240px;
   background-position: center center;
   background-color: #383838;
@@ -782,7 +782,7 @@ blockquote, q {
       text-decoration: underline; }
 
 .entry-header-textonly {
-  word-break: break-all;
+  word-break: keep-all;
   background-color: #455a64;
   margin-bottom: 20px;
   position: relative; }
@@ -1152,9 +1152,10 @@ object {
   .site-header h1 a:hover {
     color: #E32636; }
   .site-header h2 {
+    font-family: "Open Sans", sans-serif;
     font-size: 1em;
     font-weight: 400;
-    color: #455a64; }
+    color: rgba(255, 255, 255, 0.9); }
 
 /*.custom-background {
     background-size: cover;
