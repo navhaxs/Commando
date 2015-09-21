@@ -184,6 +184,10 @@
 //}
 
 .site-branding {
+    
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
     @media only screen and (min-width: $size__mobile) {
         float: left;
     }
