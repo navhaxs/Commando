@@ -35,9 +35,9 @@
 }
 
 .entry-header {
-    
+
     word-break: keep-all;
-    
+
     min-height: 240px;
     background-position: center center;
     background-color: #383838;
@@ -56,9 +56,13 @@
 
 .entry-header-textonly {
     
-    word-break: keep-all;
+    /*word-break: keep-all;*/
+    
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
     
     background-color: $color__primary;
+    
     margin-bottom: 20px;
     position: relative;
     

@@ -477,16 +477,18 @@ blockquote, q {
   font-weight: 400;
   padding-left: 8px;
   padding-right: 8px;
+  background-color: rgba(44, 47, 50, 0.16);
   margin-top: 30px; }
   .main-navigation ul {
     list-style: none;
     margin: 0;
-    padding-left: 0; }
+    padding-left: 0;
+    /* menus */ }
     .main-navigation ul ul {
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       float: left;
       position: absolute;
-      top: 1em;
+      top: 1.2em;
       margin-top: 20px;
       background-color: #1b2428;
       left: -999em;
@@ -780,7 +782,9 @@ blockquote, q {
       text-decoration: underline; }
 
 .entry-header-textonly {
-  word-break: keep-all;
+  /*word-break: keep-all;*/
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
   background-color: #455a64;
   margin-bottom: 20px;
   position: relative; }
@@ -917,7 +921,7 @@ object {
     padding-top: 0px;
     padding-right: 30px;
     padding-left: 30px;
-    padding-bottom: 0px; }
+    padding-bottom: 30px; }
   .format-video embed,
   .format-video iframe,
   .format-video object {
@@ -1068,7 +1072,7 @@ object {
   width: 25%; }
 
 .site-footer-wrapper {
-  background-color: #34434C;
+  background-color: #1c2429;
   min-height: 120px;
   box-shadow: 0px 500px 0px 500px rgba(0, 0, 0, 0.75); }
 
@@ -1087,7 +1091,8 @@ object {
       color: #E32636; }
   .site-footer .widget {
     background-color: rgba(234, 234, 234, 0.11);
-    border: 1px solid rgba(0, 0, 0, 0.46);
+    box-shadow: none;
+    border: none;
     margin: 0 10px 10px 0; }
   .site-footer .site-info {
     float: right;
@@ -1112,7 +1117,7 @@ object {
   border-right: 25px solid transparent;
   border-top: 30px solid #FFF;
   position: absolute;
-  top: -1px;
+  top: 0px;
   right: 50%;
   width: 50px;
   height: 50px;
@@ -1146,7 +1151,7 @@ object {
   padding-bottom: 20px; }
   .site-header h1 a {
     font-family: "Sansation Bold", sans-serif;
-    font-size: 2.0em;
+    font-size: 1.2em;
     font-weight: 300;
     text-decoration: none;
     text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.32);
