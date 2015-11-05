@@ -3,7 +3,7 @@ Commando
 
 A WordPress blogging theme for the Captian of the Seas*
 
-![Screenshot](https://raw.githubusercontent.com/navhaxs/Commando/screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/navhaxs/Commando/master/screenshot.png)
 
 ### Features
 - Right sidebar, Footer widgets, Featured images, Mobile view
