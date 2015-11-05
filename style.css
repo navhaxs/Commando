@@ -507,7 +507,7 @@ blockquote, q {
     position: relative;
     padding-top: 8px;
     padding-bottom: 8px;
-    line-height: 1em;
+    line-height: 1.4em;
     max-width: 300px;
     -webkit-transition: background 0.1s ease;
     -moz-transition: background 0.1s ease;
@@ -1032,6 +1032,15 @@ object {
     float: right;
     width: 25%;
     margin-right: 10px; } }
+/* for full width */
+@media only screen and (max-width: 1340px) {
+  /*1280px*/
+  .full-width .site-main {
+    -moz-transition: 0.3s !important;
+    -o-transition: 0.3s !important;
+    -webkit-transition: 0.3s !important;
+    transition: 0.3s !important;
+    margin: 0px 10px 0px 10px !important; } }
 @media only screen and (max-width: 950px) {
   .content-area {
     float: inherit;
@@ -1039,11 +1048,11 @@ object {
     width: auto; }
 
   .site-main {
-    -moz-transition: 0.3s;
-    -o-transition: 0.3s;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    margin: 0px 10px 0px 10px; }
+    -moz-transition: 0.3s !important;
+    -o-transition: 0.3s !important;
+    -webkit-transition: 0.3s !important;
+    transition: 0.3s !important;
+    margin: 0px 10px 0px 10px !important; }
 
   .site-content .widget-area {
     float: inherit;
@@ -1057,10 +1066,9 @@ object {
 @media only screen and (max-width: 600px) {
   .page-content, .entry-content, .entry-summary {
     padding: 0px 15px 15px; } }
-.content-area-full-width {
-  margin: 0;
+.full-width {
   width: 100%; }
-  .content-area-full-width .site-main {
+  .full-width .site-main {
     margin: 0; }
 
 .page-header {
@@ -1101,7 +1109,8 @@ object {
 
 @media only screen and (max-width: 950px) {
   .site-footer {
-    margin: 0px 20px 0px 20px; }
+    width: 100%;
+    padding: 0px 10px 0px 10px; }
     .site-footer .widget {
       background-color: rgba(255, 255, 255, 0.07);
       border: 1px solid rgba(0, 0, 0, 0.46);
@@ -1117,7 +1126,7 @@ object {
   border-right: 25px solid transparent;
   border-top: 30px solid #FFF;
   position: absolute;
-  top: 0px;
+  top: -1px;
   right: 50%;
   width: 50px;
   height: 50px;
@@ -1172,5 +1181,8 @@ object {
 .error-404 .page-content {
   padding-top: 50px;
   padding-bottom: 35%; }
+
+.milestone-content {
+  max-width: 100%; }
 
 /*# sourceMappingURL=style.css.map */

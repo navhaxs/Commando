@@ -5,13 +5,6 @@
  * Contains the closing of the #content div and all content after
  *
  * @package commando
- 
- 
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'commando' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'commando' ), 'WordPress' ); ?></a>
-
-TODO
-http://www.cssstickyfooter.com/using-sticky-footer-code.html
- 
  */
 ?>
 	</div><!-- #content -->

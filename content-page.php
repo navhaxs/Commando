@@ -13,7 +13,7 @@
             $header_src = $image_attributes[0];
             $header_width = $image_attributes[1];
     ?>
-    <header class="entry-header" style="min-height: 200px;
+    <header class="entry-header" style="min-height: 500px;
  background-image: url('<?php echo $header_src; ?>');<?php if ($header_width > 873) echo "background-size: cover;"; ?>">       
     <?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
     

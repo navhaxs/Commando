@@ -36,21 +36,38 @@
 
 }
 
+/* for full width */
+@media only screen and (max-width: 1340px) { /*1280px*/
+    .full-width {
+        .site-main {
+        
+            -moz-transition: 0.3s !important;
+            -o-transition: 0.3s !important;
+            -webkit-transition: 0.3s !important;
+            transition: 0.3s !important;
+
+            margin: 0px 10px 0px 10px !important;
+        }
+
+    }
+}
+
+
 @media only screen and (max-width: $size__mobile) {
     .content-area {
         float: inherit;
         margin: auto;
         width: auto;
     }
-
+    
     .site-main {
         
-        -moz-transition: 0.3s;
-        -o-transition: 0.3s;
-        -webkit-transition: 0.3s;
-        transition: 0.3s;
+        -moz-transition: 0.3s !important;
+        -o-transition: 0.3s !important;
+        -webkit-transition: 0.3s !important;
+        transition: 0.3s !important;
 
-        margin: 0px 10px 0px 10px;
+        margin: 0px 10px 0px 10px !important;
     }
 
     .site-content .widget-area {
@@ -79,14 +96,12 @@
 }
 
 
-.content-area-full-width {
-    margin: 0;
+.full-width {
+    width: 100%;
     
     .site-main {
-        margin: 0;
+        margin: 0; // don't have the 25% margin for the sidebar
     }
-    
-    width: 100%;
 }
 
 // Archives header block TODO: google calendar style custom img, per month
@@ -148,7 +163,8 @@
 @media only screen and (max-width: $size__mobile) {
  .site-footer {
     
-     margin: 0px 20px 0px 20px;
+     width: 100%;
+     padding: 0px 10px 0px 10px;
 
     & .widget {
         background-color: rgba(255,255,255,0.07);
@@ -172,7 +188,7 @@
     border-right: 25px solid transparent;
     border-top: 30px solid #FFF;
     position: absolute;
-    top: 0px;
+    top: -1px; // just for extra style points
     right: 50%;
     width: 50px;
     height: 50px;
@@ -266,4 +282,10 @@
 .error-404 .page-content {
     padding-top: 50px;
     padding-bottom: 35%;
+}
+
+
+// misc fixes
+.milestone-content {
+    max-width: 100%;
 }
