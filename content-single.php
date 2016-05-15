@@ -14,7 +14,7 @@
             $header_width = $image_attributes[1];
     ?>
     <header class="entry-header" style="min-height: 500px;
- background-image: url('<?php echo $header_src; ?>');<?php if ($header_width > 873) echo "background-size: cover;"; ?>">
+ background-image: linear-gradient(to bottom, rgba(0,0,0,0) 75%, rgba(0,0,0,0.9) 100%), url('<?php echo $header_src; ?>');<?php if ($header_width > 873) echo "background-size: cover;"; ?>">
     <?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" data-sr="enter bottom after 0s over 1s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
 
     <?php else :?>
