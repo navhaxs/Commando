@@ -1,13 +1,13 @@
 .sticky{
 	display: block;
-    
-    .entry-header, .entry-header-textonly {
-        background-color: $color__complementary;
-    }
+
+    // .entry-header, .entry-header-textonly {
+    //     background-color: $color__complementary;
+    // }
 }
 
 .hentry, .page-header, .page-content {
-	margin: 0 0 1.5em;
+	// margin: 0 0 1.5em;
     background-color: white;
     //overflow: hidden; //IE: casues left padding line in header boxes
 // OLD:    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.15);
@@ -16,14 +16,9 @@
 .hentry, .page-header, .page-content, .widget, .comments-area {
     -ms-word-wrap: break-word;
     word-wrap: break-word;
-    
-    -webkit-box-shadow: 2px 2px 16px 0px rgba(0,0,0,0.35);
-    -moz-box-shadow: 2px 2px 16px 0px rgba(0,0,0,0.35);
-    box-shadow: 2px 2px 16px 0px rgba(0,0,0,0.35);
-    
-    border-radius: 2px;
+
 }
-    
+
 .byline,
 .updated:not(.published){
 	display: none;
@@ -34,20 +29,22 @@
 	display: inline;
 }
 
-.entry-header {
+.entry-header, .entry-header-textonly {
 
     word-break: keep-all;
 
     min-height: 240px;
     background-position: center center;
-    background-color: #383838;
+    background-color: $color__primary;
     position: relative;
     margin-bottom: 20px;
-    
+
+
     h1 > a {
         color: white;
         text-decoration: none;
-        
+				font-weight: lighter;
+
         &:hover {
             text-decoration: underline;
         }
@@ -55,47 +52,44 @@
 }
 
 .entry-header-textonly {
-    
+
     /*word-break: keep-all;*/
-    
+
     -ms-word-wrap: break-word;
     word-wrap: break-word;
-    
-    background-color: $color__primary;
-    
-    margin-bottom: 20px;
-    position: relative;
-    
-    h1 > a {
-        color: white;
-        text-decoration: none;
-        
-        &:hover {
-            text-decoration: underline;
-        }
-    }
+
 }
+
+.page-title {
+	font-weight: lighter;
+}
+
 
 .entry-title {
     position: absolute; bottom: 0; left: 0;
     color: white;
-    background-color: rgba(0,0,0,0.8);
+    // background-color: rgba(0,0,0,0.8);
     display: inline-block;
-    padding: 10px 25px 0 30px;
+    padding: 10px 25px 25px 60px;
 }
 
 .entry-title-textonly {
     color: white;
     display: inline-block;
-    padding: 10px 25px 0 30px;
+    // padding: 10px 25px 0 30px;
+
+
+		position: absolute;
+		bottom: 0;
+		left: 60px;
 }
 
 .entry-footer {
     font-family: $font__main;
     font-size: 1em;
-    background-color: $color__primary;
+    background-color: $color__complementary;
     color: white;
-    
+
     text-align: right;
     right: 0px;
     display: inline-block;
@@ -103,7 +97,7 @@
     //float: right;
 
     font-style: italic;
-    
+
     a {
         color: white;
         text-decoration: none;
@@ -111,7 +105,7 @@
             text-decoration: underline;
         }
     }
-    
+
     .comments-link, .tags-links, .edit-link {
         margin-left: 10px;
         margin-right: 10px;
@@ -121,10 +115,15 @@
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: 1.5em 0 0;
+		margin: 1.5em 0 0;
     margin-top: 0;
-    padding: 60px;
-    padding-top: 0;
+    padding: 20px 10px 20px 50px;
+
+		h2 {
+			margin: 0;
+			
+		}
+
 }
 
 .page-links {

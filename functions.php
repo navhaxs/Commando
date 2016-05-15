@@ -68,7 +68,7 @@ function commando_setup() {
 	add_theme_support( 'post-formats', array(
 		'aside', 'image', 'video', 'quote', 'link',
 	) );
-    
+
     add_theme_support( 'post-thumbnails' );
 
 	// Set up the WordPress core custom background feature.
@@ -86,15 +86,6 @@ add_action( 'after_setup_theme', 'commando_setup' );
  * @link http://codex.wordpress.org/Function_Reference/register_sidebar
  */
 function commando_widgets_init() {
-	register_sidebar( array(
-		'name'          => __( 'Sidebar', 'commando' ),
-		'id'            => 'sidebar-1',
-		'description'   => '',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h1 class="widget-title">',
-		'after_title'   => '</h1>',
-	) );
     register_sidebar( array(
 		'name'          => __( 'Footer 1', 'commando' ),
 		'id'            => 'footer-1',
@@ -113,6 +104,24 @@ function commando_widgets_init() {
 		'before_title'  => '<h1 class="widget-title">',
 		'after_title'   => '</h1>',
 	) );
+	register_sidebar( array(
+		'name'          => __( 'Footer 3', 'commando' ),
+		'id'            => 'footer-3',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+		) );
+	register_sidebar( array(
+		'name'          => __( 'Footer 4', 'commando' ),
+		'id'            => 'footer-4',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+		) );
 }
 add_action( 'widgets_init', 'commando_widgets_init' );
 

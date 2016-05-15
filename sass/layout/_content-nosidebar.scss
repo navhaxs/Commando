@@ -1,0 +1,313 @@
+$size__site-main: 100%;
+// $size__site-sidebar: 0%;
+
+/* maximum width */
+$size__maxwidth: 1100px;
+
+$size__mobile: 950px;
+
+@media only screen and (min-width: $size__mobile) {
+    .content-area {
+        // float: left;
+        margin: 0 auto;
+        width: $size__site-main;
+    }
+
+    .site-main {
+        margin: 0 0 1.5em;
+
+        -webkit-box-shadow: 2px 2px 16px 0px rgba(0,0,0,0.35);
+        -moz-box-shadow: 2px 2px 16px 0px rgba(0,0,0,0.35);
+        box-shadow: 2px 2px 16px 0px rgba(0,0,0,0.35);
+
+        border-radius: 2px;
+    }
+
+    .site-content .widget-area {
+        float: right;
+        width: $size__site-sidebar;
+    }
+
+}
+
+@media only screen and (max-width: 1320px) { /*1280px+10px+10px*/
+    .content-area {
+        // float: left;
+        margin: 0 auto;
+        width: $size__site-main;
+    }
+
+    .site-main {
+        margin: 0 10px 1.5em;
+
+        -webkit-box-shadow: 2px 2px 16px 0px rgba(0,0,0,0.35);
+        -moz-box-shadow: 2px 2px 16px 0px rgba(0,0,0,0.35);
+        box-shadow: 2px 2px 16px 0px rgba(0,0,0,0.35);
+
+        border-radius: 2px;
+    }
+
+    .site-content .widget-area {
+        float: right;
+        width: $size__site-sidebar;
+        margin-right: 10px;
+    }
+
+}
+
+/* for full width */
+@media only screen and (max-width: 1340px) { /*1280px*/
+    .full-width {
+        .site-main {
+
+            -moz-transition: 0.3s !important;
+            -o-transition: 0.3s !important;
+            -webkit-transition: 0.3s !important;
+            transition: 0.3s !important;
+
+            margin: 0px 10px 0px 10px !important;
+        }
+
+    }
+}
+
+
+@media only screen and (max-width: $size__mobile) {
+    .content-area {
+        float: inherit;
+        margin: auto;
+        width: auto;
+    }
+
+    .site-main {
+
+        -moz-transition: 0.3s !important;
+        -o-transition: 0.3s !important;
+        -webkit-transition: 0.3s !important;
+        transition: 0.3s !important;
+
+        margin: 0px 10px 0px 10px !important;
+    }
+
+    .site-content .widget-area {
+        float: inherit;
+        margin: 10px auto 0px auto;
+
+        -moz-transition: 0.25s;
+        -o-transition: 0.25s;
+        -webkit-transition: 0.25s;
+        transition: 0.25s;
+
+        padding: 10px;
+
+        //width: auto;
+
+        //width: 97%;
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .page-content, .entry-content, .entry-summary {
+        padding: 0px 15px 15px;
+    }
+}
+
+
+.full-width {
+    width: 100%;
+
+    .site-main {
+        margin: 0; // don't have the 25% margin for the sidebar
+    }
+}
+
+// Archives header block TODO: google calendar style custom img, per month
+.page-header {
+    background-color: $color__primary;
+    color: white;
+    padding: 5px 15px 15px 15px;
+}
+
+.thirds {
+    width: 25%;
+}
+
+.site-footer-wrapper {
+    background-color: $color__background-footer;// rgba(0, 0, 0, 0.75);
+
+    min-height: 120px;
+
+
+    //hack to fill footer to very bottom
+    box-shadow: 0px 500px 0px 500px rgba(0, 0, 0, 0.75);
+
+}
+
+.site-footer {
+    width: $size__site-main;
+    max-width: $size__maxwidth;
+
+    color: white;
+
+    margin: 0 auto 0 auto;
+    font-size: 0.95em;
+    padding: 50px 0;
+
+    position: relative;
+
+    a {
+        color: #ff6d6d;
+        text-decoration: none;
+
+        &:hover {
+            color: $color__complementary;
+        }
+    }
+
+    & .widget {
+        background-color: rgba(234, 234, 234, 0.11);
+        box-shadow: none;
+	    border: none;
+        margin: 0 10px 10px 0;
+    }
+
+    & .site-info {
+        // float: right;
+        margin-bottom: 50px;
+        right: 0;
+        text-align: right;
+    }
+}
+
+@media only screen and (max-width: $size__mobile) {
+ .site-footer {
+
+     width: 100%;
+     padding: 0px 10px 0px 10px;
+
+    & .widget {
+        background-color: rgba(255,255,255,0.07);
+        border: 1px solid rgba(0, 0, 0, 0.46);
+        margin: 20px 0px 10px 0px;
+    }
+
+    .thirds {
+        width: 100%;
+    }
+
+    & .site-info {
+        padding-top: 50px;
+        float: none;
+        text-align: center;
+    }
+ }
+}
+.arrow-down {
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 30px solid #FFF;
+    position: absolute;
+    top: -1px; // just for extra style points
+    right: 50%;
+    width: 50px;
+    height: 50px;
+    left: 50%;
+    margin-left: -25px;
+}
+
+//.hfeed {
+//    margin: 0 auto;
+//}
+
+.site-branding {
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    @media only screen and (min-width: $size__mobile) {
+        float: left;
+    }
+
+    h1 {
+        margin: 0 0;
+        line-height: normal;
+    }
+}
+
+.site-navigation {
+    float: right;
+}
+
+.main-navigation {
+    clear: none;
+
+
+    & .menu-toggle {
+        margin: 0px auto 0px auto;
+    }
+
+}
+
+//.site-branding {
+//    clear: both;
+//}
+//
+//.site-title {
+//    float: left;
+//}
+//
+//.site-description {
+//    float: right;
+//}
+
+.site-content, .site-header {
+    max-width: $size__maxwidth;
+    margin: 0 auto;
+}
+//header
+.site-header {
+    // padding: 10px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+
+    h1 a {
+        font-family: $font__header;
+        font-size: 1.2em;
+        font-weight: 300;
+        text-decoration: none;
+        text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.32);
+        color: white;
+    }
+
+    h1 a:hover {
+        color: $color__link;
+    }
+
+    h2 {
+        margin-left: 50px;
+        font-family: $font__main;
+        font-size: 1em;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.9);
+    }
+}
+
+// use cover for full-sized background image
+
+/*.custom-background {
+    background-size: cover;
+}
+*/
+
+.error-404 .page-content {
+    padding-top: 50px;
+    padding-bottom: 35%;
+}
+
+
+// misc fixes
+.milestone-content {
+    max-width: 100%;
+}

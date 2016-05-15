@@ -48,19 +48,19 @@
 
 .gallery .gallery-item:hover img,
 .gallery .gallery-item:focus img {
-  -webkit-box-shadow: rgba(0, 0, 0, .5) 0 1px 3px;
-  -moz-box-shadow: rgba(0, 0, 0, .5) 0 1px 3px;
-  -o-box-shadow: rgba(0, 0, 0, .5) 0 1px 3px;
-  box-shadow: rgba(0, 0, 0, .5) 0 1px 3px;
-  position: relative;
-  top: -2px;
-
-  /* Scale a little bit every piece and  */
-  /* This transform is not working on webkit because it renders the rotation and scale inside the column */
-  /*-webkit-transform: scale(1.05) rotate(-0.3deg);*/
-  -moz-transform: scale(1.01) rotate(-0.3deg);
-  -o-transform: scale(1.05) rotate(-0.3deg);
-  transform: scale(1.05) rotate(-0.3deg);
+  // -webkit-box-shadow: rgba(0, 0, 0, .5) 0 1px 3px;
+  // -moz-box-shadow: rgba(0, 0, 0, .5) 0 1px 3px;
+  // -o-box-shadow: rgba(0, 0, 0, .5) 0 1px 3px;
+  // box-shadow: rgba(0, 0, 0, .5) 0 1px 3px;
+  // position: relative;
+  // top: -2px;
+	//
+  // /* Scale a little bit every piece and  */
+  // /* This transform is not working on webkit because it renders the rotation and scale inside the column */
+  // /*-webkit-transform: scale(1.05) rotate(-0.3deg);*/
+  // -moz-transform: scale(1.01) rotate(-0.3deg);
+  // -o-transform: scale(1.05) rotate(-0.3deg);
+  // transform: scale(1.05) rotate(-0.3deg);
 }
 
 .gallery-caption {
