@@ -12,26 +12,25 @@
 <footer id="colophon" class="site-footer-wrapper">
     <div class="site-footer" role="contentinfo">
 
-				<div class="thirds footer-nav widget" style="float:right;">
-					<h1 class="widget-title" style="text-align: left;">Where to next?</h2>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-					<?php dynamic_sidebar( 'footer-1' ); ?>
+        <div class="thirds footer-nav widget" style="float:right;">
+            <?php if ( is_active_sidebar( 'footer-1' ) ): ?> 
+                <?php dynamic_sidebar( 'footer-1' ); ?>
+            <?php else: ?>
+            <h1 class="widget-title" style="text-align: left;">Where to next?</h2>
+            <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+            <?php endif; ?>
         </div>
 
         <div class="thirds" style="float:right;">
             <?php dynamic_sidebar( 'footer-2' ); ?>
         </div>
 
-				<div class="thirds" style="float:right;">
+        <div class="thirds" style="float:right;">
             <?php dynamic_sidebar( 'footer-3' ); ?>
         </div>
 
-				<div class="thirds" style="float:right;">
-            <?php dynamic_sidebar( 'footer-4' ); ?>
-        </div>
-
         <div class="site-info">
-						<h2 class="special">:)</h2>
+            <h2 class="special">:)</h2>
             <?php printf( __( 'Powered by %1$s', 'commando' ), '<a href="http://wordpress.org/">WordPress</a>' ); ?>
             <span class="sep"> &amp; </span>
             <?php printf( __( '%1$s.', 'commando' ), '<a href="http://github.com/navhaxs/commando/" rel="designer">Commando</a>' ); ?>
@@ -47,6 +46,6 @@
 
 	 window.sr = new scrollReveal();
 
- </script>
+</script>
 </body>
 </html>
