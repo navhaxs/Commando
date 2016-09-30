@@ -42,8 +42,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	12.1 Captions
 	12.2 Galleries
 --------------------------------------------------------------*/
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600);
-@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
+/*@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);*/
 @font-face {
   font-family: 'Sansation Bold';
   src: url("fonts/sansation-bold-webfont.eot");

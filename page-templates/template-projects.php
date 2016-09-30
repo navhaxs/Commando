@@ -16,7 +16,7 @@ https://davidwalsh.name/background-animation-css
 		<main id="main" class="site-main" role="main">
 
 			<div class="grid-container">
-				<div class="box a">Published projects</div>
+				<div class="box a">Free time stuff</div>
 				  <!-- <div class="box col-3 b">
 
 						<h2>Latest blog posts</h2>
@@ -41,18 +41,26 @@ https://davidwalsh.name/background-animation-css
 
 						<span>7,000+ downloads</span>
 
-						<a href="http://navhaxs.au.eu.org/minecraft-dashboard/">Website</a>
+						<a href="http://navhaxs.au.eu.org/minecraft-dashboard/">Project page</a>
 
 					</div>
-					<div class="box col-3 e wiimote">
+					<div class="box col-3 f brightnesstray">
+						<h2>Brightness Tray</h2>
+
+						<span>The missing laptop brightness slider.</span>
+
+						<a href="https://navhaxs.au.eu.org/projects/brightnesstray/">Project page</a>
+
+					</div>
+                    <div class="box col-3 e wiimote">
 						<h2>Wii Remote Presenter for PowerPoint</h2>
 
 						<span>Use your wiimote to control PowerPoint with this addin written in C#</span>
 
-						<a href="https://github.com/navhaxs/wiimote-presenter-powerpoint">Website</a>
+						<a href="http://navhaxs.au.eu.org/projects/wii-remote-presenter-for-powerpoint/">Project page</a>
 
 					</div>
-					<div class="box z">Coming soon</div>
+<!--					<div class="box z">Coming soon; Experiments</div>
 					<div class="box col-3 c visionscreens">
 
 						<h2>VisionScreens</h2>
@@ -66,7 +74,7 @@ https://davidwalsh.name/background-animation-css
 						<a href="#">Read more</a>
 
 					</div>
-
+-->
 					<!-- <div class="box col-3 d">
 
 					</div> -->
