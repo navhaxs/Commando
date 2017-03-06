@@ -11,11 +11,13 @@
 }
 
 .comment-body {
-    border-left: 3px solid $color__complementary;
+    border-left: 4px solid rgb(80, 119, 136);
+    background: rgb(234, 241, 244);
     padding-left: 5px;
     
     & .comment-reply-link {
-        color: $color__complementary;
+        color: rgb(80, 119, 136);
+        font-style: italic;
     }
 }
 

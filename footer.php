@@ -13,14 +13,14 @@
     <div class="site-footer" role="contentinfo">
 
         <div class="thirds footer-nav widget" style="float:right;">
-            <?php if ( is_active_sidebar( 'footer-1' ) ): ?> 
-                <?php dynamic_sidebar( 'footer-1' ); ?>
-            <?php else: ?>
             <h1 class="widget-title" style="text-align: left;">Where to next?</h2>
             <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-            <?php endif; ?>
         </div>
 
+        <div class="thirds" style="float:right;">
+            <?php dynamic_sidebar( 'footer-1' ); ?>
+        </div>
+        
         <div class="thirds" style="float:right;">
             <?php dynamic_sidebar( 'footer-2' ); ?>
         </div>

@@ -86,8 +86,8 @@ blockquote, q {
         transition: background 0.1s ease;
 
         &:hover {
-            @include background-opacity($color__complementary, 0.8);
-            // background-color: rgba(75, 88, 104, 0.8);
+            // @include background-opacity($color__complementary, 0.8);
+            background-color: rgba(75, 88, 104, 0.8);
 
             > a {
                 color: white;
@@ -154,7 +154,6 @@ blockquote, q {
     position: relative;
     vertical-align: top;
     width: 100%;
-    height: 60px;
     padding: 10px;
     font-size: 18px;
     color: white;
